@@ -1,0 +1,11 @@
+# Core CrewAI dependencies
+crewai>=0.1.0
+crewai-tools>=0.1.0
+
+# Common AI/ML libraries
+langchain>=0.1.0
+openai>=1.0.0
+
+# Utility libraries
+python-dotenv>=1.0.0
+pydantic>=2.0.0
