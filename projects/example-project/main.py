@@ -32,14 +32,25 @@ def main():
     print(f"{'='*60}\n")
     
     # Create and run the crew
-    crew = create_crew(topic)
-    result = crew.kickoff()
-    
-    print(f"\n{'='*60}")
-    print("Crew Execution Completed!")
-    print(f"{'='*60}\n")
-    print("Result:")
-    print(result)
+    try:
+        crew = create_crew(topic)
+        result = crew.kickoff()
+        
+        print(f"\n{'='*60}")
+        print("Crew Execution Completed!")
+        print(f"{'='*60}\n")
+        print("Result:")
+        print(result)
+    except Exception as e:
+        print(f"\n{'='*60}")
+        print("Error during crew execution!")
+        print(f"{'='*60}\n")
+        print(f"Error: {str(e)}")
+        print("\nPlease check:")
+        print("1. Your API key is valid and has sufficient credits")
+        print("2. Your internet connection is stable")
+        print("3. The CrewAI library is properly installed")
+        return
     
 
 if __name__ == "__main__":

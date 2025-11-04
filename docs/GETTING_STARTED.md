@@ -8,7 +8,7 @@ CrewAI is a framework for orchestrating role-playing, autonomous AI agents. By f
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.8 or higher
 - pip (Python package installer)
 
 ### Step 1: Set up your environment
